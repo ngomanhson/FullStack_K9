@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-bar {
+    position: fixed;
+    inset: 0 0 0 60%;
+    background: #fff;
+    padding: 15px;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+}
+
+input[type="checkbox"]:checked + .overlay {
+    position: absolute;
+    inset: 0;
+    background: #00000091;
+    transition: all 0.2s linear;
+}
+
+input[type="checkbox"]:checked ~ .menu-bar {
+    transform: translateX(0);
+}
