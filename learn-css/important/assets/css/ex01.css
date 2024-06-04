@@ -1,0 +1,39 @@
+/* 
+
+Thứ tự độ ưu tiên
+    0. important
+    1. inline
+    2. id
+    3. class
+    4. tag
+
+    Phạm vi tác động càng nhỏ ==> Độ ưu tiên càng cao
+
+Một số cách để tăng độ ưu tiên
+    - Thứ tự: Sau ưu tiên cao hơn trước
+    - Selector chi tiết: độ ưu tiên cao hơn
+*/
+
+/* div {
+    color: red !important;
+}
+
+.box {
+    color: green;
+}
+
+#content {
+    color: blueviolet;
+} */
+
+/* div.box {
+    color: purple;
+} */
+
+.box {
+    color: red;
+}
+
+.box {
+    color: orange;
+}

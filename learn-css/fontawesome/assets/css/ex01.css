@@ -1,0 +1,36 @@
+ul li {
+    list-style: none;
+    display: flex;
+    line-height: 1.5;
+}
+
+ul li::before {
+    content: "\f105";
+    font-family: "FontAwesome";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    padding: 2px;
+}
+
+ul li:nth-child(1)::before {
+    content: "\f09a";
+    background: blue;
+}
+
+ul li:nth-child(2)::before {
+    content: "\f099";
+    background: #4aaaff;
+}
+
+ul li:nth-child(3)::before {
+    content: "\f167";
+    background: red;
+}
